@@ -6,14 +6,14 @@
 	const fadeOut = "fade-out";
 	const fadeOutDelay = 1000;
 	const text = [
-		"It has the old-school Aero design, straight from Windows 7",
-		"It has functional voice chat (sending and receiving voice data)",
-		"It's free and open source",
-		'It restores nudge functionality which you know and "love" from MSN/WLM \'09',
-		"It's easy to use (most of the time)",
+		"AeroChat has the old-school Aero design, straight from Windows 7",
+		"AeroChat has functional voice chat (sending and receiving voice data)",
+		"AeroChat's free and open source",
+		'AeroChat restores nudge functionality which you know and "love" from MSN/WLM \'09',
+		"AeroChat's easy to use (most of the time)",
 		"You can send files to your friends",
-		"You can decide on the project's future by contributing to it or by voting in polls",
-		"It looks and feels just like WLM '09"
+		"You can decide on AeroChat's future by contributing to it or by voting in polls",
+		"AeroChat looks and feels just like WLM '09"
 	];
 	let currentText = 0;
 	let currentText2 = 0;
@@ -71,11 +71,10 @@
 					{text[currentText]}
 				</p>
 			</div>
-			<div style={`margin-top: ${top}px; max-width: 550px; margin-left: 5px`}>
+			<article style={`margin-top: ${top}px; max-width: 550px; margin-left: 5px`}>
 				<p>
-					AeroChat is a free and open source Discord client for Windows. It's designed to
-					look and feel just like Windows Live Messenger 2009, with custom designs for
-					anything which wasn't originally in WLM '09.
+					AeroChat (also known as "wlm-09-discord") is a total conversion for Discord to
+					look and feel like Windows Live Messenger or MSN Messenger.
 				</p>
 				<p>
 					It has tons of features you know and love from the official client, such as
@@ -93,7 +92,7 @@
 					(it used to be called <code>wlm-09-discord</code>, how boring is that?!). This
 					domain name (aerochat.live) was also voted on by the community.
 				</p>
-			</div>
+			</article>
 		</div>
 	</div>
 </div>

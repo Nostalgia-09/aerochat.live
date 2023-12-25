@@ -40,30 +40,30 @@
 			<img
 				class="screenshot screenshot2"
 				src={screenshot2}
-				alt="A screenshot of the main window from the application."
+				alt="A screenshot of AeroChat's main window."
 			/>
 			<img
 				class="screenshot screenshot3"
 				src={screenshot3}
-				alt="A screenshot of a chat window of the application."
+				alt="A screenshot of AeroChat's server chat window."
 			/>
 		</div>
 		<div class="info">
 			<div class="because">join the club</div>
 			<div class="why-container">
-				<p>Download now for Windows:</p>
+				<p>Download AeroChat for Windows:</p>
 				<!-- <a href={url}>Latest release</a>
 				<a href="https://github.com/Nostalgia-09/AeroChat/releases">All releases</a> -->
 				<CommandLink
-					title="Download the latest version"
-					description="This will download the latest tag from GitHub directly."
+					title="Download the latest version of AeroChat"
+					description="This will download the latest tag from AeroChat's GitHub repository directly."
 					on:click={() => {
 						window.open(url, "_self");
 					}}
 				/>
 				<CommandLink
 					title="View all releases"
-					description="This will open GitHub and view all public releases."
+					description="This will open AeroChat's GitHub respository and view all public releases."
 					on:click={() => {
 						window.open("https://github.com/Nostalgia-09/AeroChat/releases", "_blank");
 					}}
