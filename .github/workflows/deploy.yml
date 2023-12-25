@@ -34,4 +34,4 @@ jobs:
                   git commit -m "Auto-deploy build artifacts"
 
                   # Force-push the changes to the remote deploy branch
-                  git push --force origin deploy
+                  git push --force
