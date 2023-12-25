@@ -45,7 +45,7 @@
 </script>
 
 <svelte:head>
-	<title>AeroChat — Discord client in the style of Windows Live Messenger 2009</title>
+	<title>AeroChat — WLM '09 themed Discord client</title>
 	<meta
 		name="title"
 		content="AeroChat — Discord client in the style of Windows Live Messenger 2009"
@@ -115,6 +115,15 @@
 			opacity: 0;
 		}
 	}
+	@keyframes bounce-2 {
+		0% {
+			transform: perspective(960px) rotateX(8deg) rotateY(20deg) rotateZ(-4deg);
+		}
+		50% {
+			transform: perspective(960px) rotateX(12deg) rotateY(25deg) rotateZ(-6deg)
+				translateY(-24px);
+		}
+	}
 	.content {
 		display: flex;
 		position: absolute;
@@ -126,6 +135,7 @@
 		justify-content: center;
 	}
 	.screenshot {
+		animation: bounce-2 4s infinite ease-in-out;
 		border-radius: 6px;
 		transform: perspective(960px) rotateX(8deg) rotateY(20deg) rotateZ(-4deg);
 		backdrop-filter: blur(1px);
