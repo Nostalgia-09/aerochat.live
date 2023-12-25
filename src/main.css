@@ -1,0 +1,30 @@
+body {
+	margin: 0;
+	background: linear-gradient(to bottom right, #f9feff 50%, #b9d1ea) no-repeat fixed;
+}
+
+* {
+	user-select: none;
+	font-family: "Segoe UI", sans-serif;
+	font-size: 12px;
+}
+
+h1 {
+	margin-top: 0;
+	font-size: 16px;
+	font-weight: 400;
+	color: #003399;
+}
+
+a {
+	color: #0066cc;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:active {
+	color: #ee0000;
+}
