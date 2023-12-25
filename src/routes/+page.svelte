@@ -126,6 +126,7 @@
 		justify-content: center;
 	}
 	.screenshot {
+		border-radius: 6px;
 		transform: perspective(960px) rotateX(8deg) rotateY(20deg) rotateZ(-4deg);
 		backdrop-filter: blur(1px);
 		filter: drop-shadow(0px 0px 8px rgba(0, 0, 0, 0.5));
