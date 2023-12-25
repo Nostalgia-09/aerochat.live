@@ -27,7 +27,11 @@ jobs:
 
                   mv build ../
                   git checkout -b deploy
+                  git fetch --all
+                  git reset --hard origin/deploy
                   cp -r ../build/* .
                   git add .
                   git commit -m "Auto-deploy build artifacts"
-                  git push origin deploy
+
+                  # Force-push the changes to the remote deploy branch
+                  git push --force origin deploy
