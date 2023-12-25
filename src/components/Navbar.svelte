@@ -14,6 +14,7 @@
 				window.location.href = "/download";
 			}}>Download</Navitem
 		>
+		<Navitem on:click={() => (window.location.href = "/faq")}>FAQ</Navitem>
 	</div>
 	<div class="nav__right">
 		<Navitem on:click={() => window.open("https://discord.gg/nP9SxVQGnu", "_blank")}

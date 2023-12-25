@@ -2,7 +2,7 @@
 	export const onclick: (e: MouseEvent) => any = () => {};
 </script>
 
-<button class="nav__item" on:click>
+<button data-fakebutton class="nav__item" on:click>
 	<span><slot /></span>
 </button>
 

@@ -17,19 +17,30 @@
 	];
 	let currentText = 0;
 	let currentText2 = 0;
+	let top = 80;
 	// interval
 	function randomize() {
 		currentText2 = currentText;
 		currentText = Math.floor(Math.random() * text.length);
 	}
+	function refreshLayout() {
+		const el = document.getElementById("fade-in");
+		if (el) {
+			top = el.getBoundingClientRect().height + 48;
+			console.log(top);
+		}
+	}
 	onMount(() => {
+		refreshLayout();
 		setInterval(() => {
 			shouldFade = true;
 			randomize();
+			refreshLayout();
 			setTimeout(() => {
 				shouldFade = false;
 			}, fadeOutDelay);
 		}, 5000);
+		window.addEventListener("resize", refreshLayout);
 	});
 </script>
 
@@ -46,7 +57,32 @@
 			<div class="because">because...</div>
 			<div class="why-container">
 				<p class={`why will-fade-out ${shouldFade && fadeOut}`}>{text[currentText2]}</p>
-				<p class={`why will-fade-in ${shouldFade && fadeIn}`}>{text[currentText]}</p>
+				<p id="fade-in" class={`why will-fade-in ${shouldFade && fadeIn}`}>
+					{text[currentText]}
+				</p>
+			</div>
+			<div style={`margin-top: ${top}px; max-width: 550px; margin-left: 5px`}>
+				<p>
+					AeroChat is a free and open source Discord client for Windows. It's designed to
+					look and feel just like Windows Live Messenger 2009, with custom designs for
+					anything which wasn't originally in WLM '09.
+				</p>
+				<p>
+					It has tons of features you know and love from the official client, such as
+					voice chat, file transfers and more. It even restores some old features from
+					Windows Live Messenger 2009, such as nudges.
+				</p>
+				<p>
+					Furthermore, it's open source, so you can contribute if a feature you want isn't
+					implemented yet, or if you want to fix a bug. The <a
+						href="https://discord.com/invite/nP9SxVQGnu"
+						target="_blank">Discord server</a
+					>
+					is also a great place to hang out and talk about the project, and even vote on future
+					features and changes. For example, the name "AeroChat" was voted on by the community
+					(it used to be called <code>wlm-09-discord</code>, how boring is that?!). This
+					domain name (aerochat.live) was also voted on by the community.
+				</p>
 			</div>
 		</div>
 	</div>
