@@ -1,3 +1,12 @@
+<svelte:head>
+	<title>Frequently Asked Questions — AeroChat</title>
+	<meta name="title" content="Frequently Asked Questions — AeroChat" />
+	<meta
+		name="description"
+		content="Here are some frequently asked questions about AeroChat. AeroChat is an open source Discord client inspired by WLM 2009."
+	/>
+</svelte:head>
+
 <div class="content">
 	<div class="faq">
 		<h1>FAQ</h1>

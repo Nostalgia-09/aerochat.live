@@ -25,7 +25,14 @@
 	});
 </script>
 
-<title>Home - AeroChat</title>
+<svelte:head>
+	<title>Download AeroChat — AeroChat</title>
+	<meta name="title" content="Download AeroChat — AeroChat" />
+	<meta
+		name="description"
+		content="Download any version of AeroChat here! Currently supports Windows 10 and Windows 11. AeroChat is an open source Discord client inspired by WLM 2009."
+	/>
+</svelte:head>
 
 <div class="content">
 	<div style="display: flex;">

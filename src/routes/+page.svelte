@@ -44,7 +44,17 @@
 	});
 </script>
 
-<title>Home - AeroChat</title>
+<svelte:head>
+	<title>AeroChat — Discord client in the style of Windows Live Messenger 2009</title>
+	<meta
+		name="title"
+		content="AeroChat — Discord client in the style of Windows Live Messenger 2009"
+	/>
+	<meta
+		name="description"
+		content="AeroChat is a new open source custom Discord client that looks 1-to-1 like WLM 2009. Download it here!"
+	/>
+</svelte:head>
 
 <div class="content" style="--fade-out-delay: {fadeOutDelay / 1000}s">
 	<div style="display: flex;">
