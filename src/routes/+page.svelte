@@ -6,7 +6,7 @@
 	const fadeOut = "fade-out";
 	const fadeOutDelay = 1000;
 	const text = [
-		"AeroChat has the old-school Aero design, straight from Windows 7",
+		"AeroChat is a custom Discord client which looks like Windows Live Messenger 2009",
 		"AeroChat has functional voice chat (sending and receiving voice data)",
 		"AeroChat's free and open source",
 		'AeroChat restores nudge functionality which you know and "love" from MSN/WLM \'09',
@@ -61,12 +61,13 @@
 			alt="A screenshot of the main window of the application."
 		/>
 		<div class="info">
+			<h1 class="pre">You should use AeroChat</h1>
 			<div class="because">because...</div>
 			<div class="why-container">
-				<p class={`why will-fade-out ${shouldFade && fadeOut}`}>{text[currentText2]}</p>
-				<p id="fade-in" class={`why will-fade-in ${shouldFade && fadeIn}`}>
+				<h1 class={`why will-fade-out ${shouldFade && fadeOut}`}>{text[currentText2]}</h1>
+				<h1 id="fade-in" class={`why will-fade-in ${shouldFade && fadeIn}`}>
 					{text[currentText]}
-				</p>
+				</h1>
 			</div>
 			<article style={`margin-top: ${top}px; max-width: 550px; margin-left: 5px`}>
 				<p>
@@ -120,6 +121,14 @@
 				translateY(-24px);
 		}
 	}
+	.pre {
+		margin-bottom: -20px;
+		margin-left: 4px;
+		font-style: italic;
+		font-size: 24px;
+		color: #359baf;
+		text-shadow: 0px 0px 24px rgba(49, 183, 220, 0.754);
+	}
 	.content {
 		display: flex;
 		position: absolute;
@@ -169,7 +178,8 @@
 	.info {
 		margin-left: 64px;
 	}
-	.why-container > p {
+	.why-container > h1 {
+		margin-top: 16px;
 		font-size: 24px;
 		font-weight: 400;
 		color: #014f5e;
