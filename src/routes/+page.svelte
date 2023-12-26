@@ -1,6 +1,7 @@
 <script lang="ts">
 	import screenshot1 from "$lib/assets/screenshot1.png";
 	import { onMount } from "svelte";
+	import CommandLink from "../components/CommandLink.svelte";
 	let shouldFade = false;
 	const fadeIn = "fade-in";
 	const fadeOut = "fade-out";
@@ -70,18 +71,21 @@
 				</h1>
 			</div>
 			<article style={`margin-top: ${top}px; max-width: 550px; margin-left: 5px`}>
+				<h1>What is AeroChat?</h1>
 				<p>
 					AeroChat (also known as "wlm-09-discord") is a total conversion for Discord to
 					look and feel like Windows Live Messenger or MSN Messenger.
 				</p>
+				<h1>What can it do?</h1>
 				<p>
 					It has tons of features you know and love from the official client, such as
 					voice chat, file transfers and more. It even restores some old features from
 					Windows Live Messenger 2009, such as nudges.
 				</p>
+				<h1>What if I want a feature it doesn't have?</h1>
 				<p>
-					Furthermore, it's open source, so you can contribute if a feature you want isn't
-					implemented yet, or if you want to fix a bug. The <a
+					It's open source, so you can contribute if a feature you want isn't implemented
+					yet, or if you want to fix a bug. The <a
 						href="https://discord.com/invite/nP9SxVQGnu"
 						target="_blank">Discord server</a
 					>
@@ -90,6 +94,13 @@
 					(it used to be called <code>wlm-09-discord</code>, how boring is that?!). This
 					domain name (aerochat.live) was also voted on by the community.
 				</p>
+				<h1>Actions</h1>
+				<CommandLink
+					title="Download now"
+					description="Navigate to the Download page"
+					href="/download"
+				/>
+				<CommandLink title="Read more" description="Navigate to the FAQ page" href="/faq" />
 			</article>
 		</div>
 	</div>
@@ -129,6 +140,13 @@
 		color: #359baf;
 		text-shadow: 0px 0px 24px rgba(49, 183, 220, 0.754);
 	}
+	.content article > h1:first-child {
+		margin-top: -8px;
+	}
+
+	.content article > h1 {
+		margin-top: 16px;
+	}
 	.content {
 		display: flex;
 		position: absolute;
@@ -153,6 +171,7 @@
 		text-shadow: 0px 0px 24px rgba(49, 183, 220, 0.754);
 		position: relative;
 		width: fit-content;
+		margin-left: -2px;
 	}
 	.because::after {
 		width: fit-content;
@@ -187,7 +206,7 @@
 		box-sizing: border-box;
 		opacity: 1;
 		position: absolute;
-		margin-left: 7px;
+		margin-left: 5px;
 	}
 	.why.fade-in {
 		animation: fade-in var(--fade-out-delay) ease-in-out forwards;

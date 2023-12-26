@@ -57,16 +57,14 @@
 				<CommandLink
 					title="Download the latest version of AeroChat"
 					description="This will download the latest tag from AeroChat's GitHub repository directly."
-					on:click={() => {
-						window.open(url, "_self");
-					}}
+					href={url}
+					target="_self"
 				/>
 				<CommandLink
 					title="View all releases"
 					description="This will open AeroChat's GitHub respository and view all public releases."
-					on:click={() => {
-						window.open("https://github.com/Nostalgia-09/AeroChat/releases", "_blank");
-					}}
+					href="https://github.com/Nostalgia-09/AeroChat/releases"
+					target="_blank"
 				/>
 			</div>
 		</div>

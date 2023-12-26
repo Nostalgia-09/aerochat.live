@@ -10,11 +10,31 @@
 <!-- svelte-ignore a11y-click-events-have-key-events -->
 <!-- svelte-ignore a11y-no-static-element-interactions -->
 <script lang="ts">
+	import { goto } from "$app/navigation";
+	import type { HTMLAttributeAnchorTarget } from "svelte/elements";
+
 	export let title = "";
 	export let description = "";
+	export let href = "";
+	export let target: HTMLAttributeAnchorTarget = "_self";
 </script>
 
-<div class="commandLink" on:click>
+<div
+	class="commandLink"
+	on:click={() => {
+		// if we're on the same domain and target is _self, use svelte's router
+		try {
+			const url = new URL(href);
+			if (url.hostname === window.location.hostname && target === "_self") {
+				goto(href);
+			} else {
+				window.open(href, target);
+			}
+		} catch {
+			goto(href);
+		}
+	}}
+>
 	<div class="commandLinkIcon" />
 	<div class="commandLinkText">
 		<h1 class="commandLinkTitle">{title}</h1>
@@ -52,7 +72,11 @@
 		right: 0;
 		bottom: 0;
 		left: 0;
-		background: linear-gradient(to bottom, #fff 0%, #f6f6f6 100%);
+		background: linear-gradient(
+			to bottom,
+			rgba(255, 255, 255, 0.5) 0%,
+			rgb(237, 237, 237, 0) 100%
+		);
 		z-index: -1;
 		transition: opacity linear;
 		transition-duration: var(--hover-enter-length);

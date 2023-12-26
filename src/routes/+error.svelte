@@ -18,7 +18,7 @@
 			Error message: {$page.error?.message}
 			Route: {$page.url.pathname}
 		</p>
-		<CommandLink title="Go home" on:click={() => (window.location.href = "/")} />
+		<CommandLink title="Go home" href="/" />
 	</div>
 </div>
 
