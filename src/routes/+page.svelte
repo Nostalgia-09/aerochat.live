@@ -48,11 +48,11 @@
 	<title>AeroChat — WLM '09 themed Discord client</title>
 	<meta
 		name="title"
-		content="AeroChat — Discord client in the style of Windows Live Messenger 2009"
+		content="AeroChat — WLM '09 themed Discord client"
 	/>
 	<meta
 		name="description"
-		content="AeroChat is a new open source custom Discord client that looks 1-to-1 like WLM 2009. Download it here!"
+		content="AeroChat is a new open source custom Discord client that looks 1-to-1 like Windows Live Messenger 2009. Download it here!"
 	/>
 </svelte:head>
 
