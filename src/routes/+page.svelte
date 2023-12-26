@@ -45,11 +45,8 @@
 </script>
 
 <svelte:head>
-	<title>AeroChat — WLM '09 themed Discord client</title>
-	<meta
-		name="title"
-		content="AeroChat — WLM '09 themed Discord client"
-	/>
+	<title>AeroChat — Windows Live Messenger themed Discord client</title>
+	<meta name="title" content="AeroChat — Windows Live Messenger themed Discord client" />
 	<meta
 		name="description"
 		content="AeroChat is a new open source custom Discord client that looks 1-to-1 like Windows Live Messenger 2009. Download it here!"
