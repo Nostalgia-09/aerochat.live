@@ -1,13 +1,14 @@
 <script lang="ts">
-	export const onclick: (e: MouseEvent) => any = () => {};
+	export let href: string = "/";
 </script>
 
-<button data-fakebutton class="nav__item" on:click>
+<a draggable="false" class="nav__item" {href}>
 	<span><slot /></span>
-</button>
+</a>
 
 <style>
 	.nav__item {
+		cursor: default;
 		display: flex;
 		text-align: center;
 		vertical-align: middle;
@@ -18,6 +19,7 @@
 		background: transparent;
 		border: none;
 		color: white;
+		-webkit-user-drag: none;
 	}
 	.nav__item:hover {
 		background: linear-gradient(
@@ -27,6 +29,7 @@
 			rgba(255, 255, 255, 0.25) 50%,
 			rgba(255, 255, 255, 0.1) 100%
 		);
+		text-decoration: none;
 		outline: solid thin rgba(0, 0, 0, 0.5);
 		box-shadow: inset 0px 0px 0px 1px rgba(255, 255, 255, 0.5);
 	}

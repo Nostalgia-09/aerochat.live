@@ -4,17 +4,9 @@
 
 <div class="nav">
 	<div class="nav__left">
-		<Navitem
-			on:click={() => {
-				window.location.href = "/";
-			}}>Home</Navitem
-		>
-		<Navitem
-			on:click={() => {
-				window.location.href = "/download";
-			}}>Download</Navitem
-		>
-		<Navitem on:click={() => (window.location.href = "/faq")}>FAQ</Navitem>
+		<Navitem href="/">Home</Navitem>
+		<Navitem href="/download">Download</Navitem>
+		<Navitem href="/faq">FAQ</Navitem>
 	</div>
 	<div class="nav__right">
 		<Navitem on:click={() => window.open("https://discord.gg/nP9SxVQGnu", "_blank")}
