@@ -52,10 +52,7 @@
 		</ul>
 		<h2>Is AeroChat worth using?</h2>
 		<p>
-			It depends on what your use case is. I don't recommend using AeroChat as your main
-			client, as it's still in early development and is missing a lot of features. However, if
-			you want to use AeroChat for the aesthetic, or just want to try it out (especially if
-			you don't use the above features), then go ahead!
+			It depends on what your use case is. <b>Discord's Terms of Service prohibits against the usage of third-party clients</b> (like AeroChat), so if you value your Discord account, you should not install AeroChat. AeroChat is still in early development, which means there are featuers missing that would be considered standard in something like Discord.
 		</p>
 		<h2>I received an error, what do I do?!</h2>
 		<p>
