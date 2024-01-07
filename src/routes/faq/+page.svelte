@@ -41,18 +41,22 @@
 			AeroChat project or not use AeroChat:
 		</p>
 		<ul>
-			<li>Calling friends/group chats (voice chats in servers work fine)</li>
+			<li><i>Calling</i> people (voice chats in servers work fine)</li>
 			<li>Emoji picker</li>
 			<li>Setting statuses (available but buggy)</li>
 			<li>Any and all moderation features</li>
 			<li>
-				User customization (changing the following is unimplemented: profile picture,
-				username, global name)
+				Most user customization (scenes are implemented, but only for other users of the
+				client)
 			</li>
 		</ul>
 		<h2>Is AeroChat worth using?</h2>
 		<p>
-			It depends on what your use case is. <b>Discord's Terms of Service prohibits against the usage of third-party clients</b> (like AeroChat), so if you value your Discord account, you should not install AeroChat. AeroChat is still in early development, which means there are featuers missing that would be considered standard in something like Discord.
+			It depends on what your use case is. <b
+				>Discord's Terms of Service prohibits against the usage of third-party clients</b
+			> (like AeroChat), so if you value your Discord account, you should not install AeroChat.
+			AeroChat is still in early development, which means there are featuers missing that would
+			be considered standard in something like Discord.
 		</p>
 		<h2>I received an error, what do I do?!</h2>
 		<p>
