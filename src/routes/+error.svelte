@@ -9,7 +9,7 @@
 		<p>Unfortunately, an error was encountered whilst trying to process your request.</p>
 		<p>
 			If you believe this is a mistake, please contact us on our <a
-				href="https://discord.gg/nP9SxVQGnu"
+				href="https://discord.gg/EfHdHThNGX"
 				target="_blank">Discord server</a
 			>.
 		</p>

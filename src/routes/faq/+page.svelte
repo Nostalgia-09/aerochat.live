@@ -61,7 +61,7 @@
 		<h2>I received an error, what do I do?!</h2>
 		<p>
 			If you received an error, please join our <a
-				href="https://discord.gg/nP9SxVQGnu"
+				href="https://discord.gg/EfHdHThNGX"
 				target="_blank">Discord server</a
 			>
 			and report it in the <code>#aerochat-help</code> channel. Include all info which the error

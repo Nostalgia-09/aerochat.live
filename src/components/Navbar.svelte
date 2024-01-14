@@ -9,7 +9,7 @@
 		<Navitem href="/faq">FAQ</Navitem>
 	</div>
 	<div class="nav__right">
-		<Navitem on:click={() => window.open("https://discord.gg/nP9SxVQGnu", "_blank")}
+		<Navitem on:click={() => window.open("https://discord.gg/EfHdHThNGX", "_blank")}
 			>Discord Server</Navitem
 		>
 	</div>
