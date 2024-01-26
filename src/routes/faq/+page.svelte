@@ -55,7 +55,7 @@
 			It depends on what your use case is. <b
 				>Discord's Terms of Service prohibits against the usage of third-party clients</b
 			> (like AeroChat), so if you value your Discord account, you should not install AeroChat.
-			AeroChat is still in early development, which means there are featuers missing that would
+			AeroChat is still in early development, which means there are features missing that would
 			be considered standard in something like Discord.
 		</p>
 		<h2>I received an error, what do I do?!</h2>
