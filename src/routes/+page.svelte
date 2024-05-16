@@ -86,7 +86,7 @@
 				<p>
 					It's open source, so you can contribute if a feature you want isn't implemented
 					yet, or if you want to fix a bug. The <a
-						href="https://discord.com/invite/nP9SxVQGnu"
+						href="https://discord.gg/Jcg84hmSqM"
 						target="_blank">Discord server</a
 					>
 					is also a great place to hang out and talk about the project, and even vote on future
