@@ -3,26 +3,6 @@
 	import screenshot3 from "$lib/assets/screenshot3.png";
 	import { onMount } from "svelte";
 	import CommandLink from "../../components/CommandLink.svelte";
-	// make a request to https://api.github.com/repos/Nostalgia-09/AeroChat/tags
-	// get [0].name
-	// fetch https://api.github.com/repos/Nostalgia-09/AeroChat/releases/tags/{name}
-	// get assets[0].browser_download_url
-	// window.open(url, "_self")
-	let url = "";
-	async function fetchLatestRelease() {
-		const tags = await fetch("https://api.github.com/repos/Nostalgia-09/AeroChat/tags");
-		const tagsJson = await tags.json();
-		const latestTag = tagsJson[0].name;
-		const release = await fetch(
-			`https://api.github.com/repos/Nostalgia-09/AeroChat/releases/tags/${latestTag}`
-		);
-		const releaseJson = await release.json();
-		const downloadUrl = releaseJson.assets[0].browser_download_url;
-		url = downloadUrl;
-	}
-	onMount(() => {
-		fetchLatestRelease();
-	});
 </script>
 
 <svelte:head>
@@ -51,21 +31,7 @@
 		<div class="info">
 			<div class="because">join the club</div>
 			<div class="why-container">
-				<p>Download AeroChat for Windows:</p>
-				<!-- <a href={url}>Latest release</a>
-				<a href="https://github.com/Nostalgia-09/AeroChat/releases">All releases</a> -->
-				<CommandLink
-					title="Download the latest version of AeroChat"
-					description="This will download the latest tag from AeroChat's GitHub repository directly."
-					href={url}
-					target="_self"
-				/>
-				<CommandLink
-					title="View all releases"
-					description="This will open AeroChat's GitHub respository and view all public releases."
-					href="https://github.com/Nostalgia-09/AeroChat/releases"
-					target="_blank"
-				/>
+				<p>AeroChat is no longer available.</p>
 			</div>
 		</div>
 	</div>
