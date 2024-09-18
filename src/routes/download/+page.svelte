@@ -10,11 +10,11 @@
 	// window.open(url, "_self")
 	let url = "";
 	async function fetchLatestRelease() {
-		const tags = await fetch("https://api.github.com/repos/Nostalgia-09/AeroChat/tags");
+		const tags = await fetch("https://api.github.com/repos/not-nullptr/Aerochat/tags");
 		const tagsJson = await tags.json();
 		const latestTag = tagsJson[0].name;
 		const release = await fetch(
-			`https://api.github.com/repos/Nostalgia-09/AeroChat/releases/tags/${latestTag}`
+			`https://api.github.com/repos/not-nullptr/Aerochat/releases/tags/${latestTag}`
 		);
 		const releaseJson = await release.json();
 		const downloadUrl = releaseJson.assets[0].browser_download_url;
@@ -63,7 +63,7 @@
 				<CommandLink
 					title="View all releases"
 					description="This will open AeroChat's GitHub respository and view all public releases."
-					href="https://github.com/Nostalgia-09/AeroChat/releases"
+					href="https://github.com/not-nullptr/Aerochat/releases"
 					target="_blank"
 				/>
 			</div>
