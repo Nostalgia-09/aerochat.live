@@ -3,9 +3,9 @@
 	import screenshot3 from "$lib/assets/screenshot3.png";
 	import { onMount } from "svelte";
 	import CommandLink from "../../components/CommandLink.svelte";
-	// make a request to https://api.github.com/repos/Nostalgia-09/AeroChat/tags
+	// make a request to https://api.github.com/repos/not-nullptr/AeroChat/tags
 	// get [0].name
-	// fetch https://api.github.com/repos/Nostalgia-09/AeroChat/releases/tags/{name}
+	// fetch https://api.github.com/repos/not-nullptr/AeroChat/releases/tags/{name}
 	// get assets[0].browser_download_url
 	// window.open(url, "_self")
 	let url = "";
@@ -53,7 +53,7 @@
 			<div class="why-container">
 				<p>Download AeroChat for Windows:</p>
 				<!-- <a href={url}>Latest release</a>
-				<a href="https://github.com/Nostalgia-09/AeroChat/releases">All releases</a> -->
+				<a href="https://github.com/not-nullptr/AeroChat/releases">All releases</a> -->
 				<CommandLink
 					title="Download the latest version of AeroChat"
 					description="This will download the latest tag from AeroChat's GitHub repository directly."

@@ -29,7 +29,7 @@
 		<h2>Is AeroChat open source?</h2>
 		<p>
 			Yes. You can view the source code on <a
-				href="https://github.com/Nostalgia-09/AeroChat"
+				href="https://github.com/not-nullptr/AeroChat"
 				target="_blank">GitHub</a
 			>.
 		</p>
