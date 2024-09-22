@@ -7,14 +7,12 @@
 	const fadeOut = "fade-out";
 	const fadeOutDelay = 1000;
 	const text = [
-		"AeroChat is a custom Discord client which looks like Windows Live Messenger 2009",
-		"AeroChat has functional voice chat (sending and receiving voice data)",
-		"AeroChat's free and open source",
-		'AeroChat restores nudge functionality which you know and "love" from MSN/WLM \'09',
-		"AeroChat's easy to use (most of the time)",
-		"You can send files to your friends",
-		"You can decide on AeroChat's future by contributing to it or by voting in polls",
-		"AeroChat looks and feels just like WLM '09"
+		"Aerochat is a custom Discord client which looks like Windows Live Messenger 2009",
+		"Aerochat's free and open source",
+		'Aerochat restores nudge functionality which you know and "love" from MSN/WLM \'09',
+		"Aerochat's easy to use (most of the time)",
+		"You can decide on Aerochat's future by contributing to it or by voting in polls",
+		"Aerochat looks and feels just like WLM '09"
 	];
 	let currentText = 0;
 	let currentText2 = 0;
@@ -46,11 +44,11 @@
 </script>
 
 <svelte:head>
-	<title>AeroChat — Windows Live Messenger themed Discord client</title>
-	<meta name="title" content="AeroChat — Windows Live Messenger themed Discord client" />
+	<title>Aerochat — Windows Live Messenger themed Discord client</title>
+	<meta name="title" content="Aerochat — Windows Live Messenger themed Discord client" />
 	<meta
 		name="description"
-		content="AeroChat is a new open source custom Discord client that looks 1-to-1 like Windows Live Messenger 2009. Download it here!"
+		content="Aerochat is a new open source custom Discord client that looks 1-to-1 like Windows Live Messenger 2009. Download it here!"
 	/>
 </svelte:head>
 
@@ -62,7 +60,7 @@
 			alt="A screenshot of the main window of the application."
 		/>
 		<div class="info">
-			<h1 class="pre">You should use AeroChat</h1>
+			<h1 class="pre">You should use Aerochat</h1>
 			<div class="because">because...</div>
 			<div class="why-container">
 				<h1 class={`why will-fade-out ${shouldFade && fadeOut}`}>{text[currentText2]}</h1>
@@ -71,16 +69,16 @@
 				</h1>
 			</div>
 			<article style={`margin-top: ${top}px; max-width: 550px; margin-left: 5px`}>
-				<h1>What is AeroChat?</h1>
+				<h1>What is Aerochat?</h1>
 				<p>
-					AeroChat (also known as "wlm-09-discord") is a total conversion for Discord to
+					Aerochat (also known as "wlm-09-discord") is a total conversion for Discord to
 					look and feel like Windows Live Messenger or MSN Messenger.
 				</p>
 				<h1>What can it do?</h1>
 				<p>
 					It has tons of features you know and love from the official client, such as
-					voice chat, file transfers and more. It even restores some old features from
-					Windows Live Messenger 2009, such as nudges.
+					servers and emojis. It even restores some old features from Windows Live
+					Messenger 2009, such as nudges.
 				</p>
 				<h1>What if I want a feature it doesn't have?</h1>
 				<p>
@@ -90,7 +88,7 @@
 						target="_blank">Discord server</a
 					>
 					is also a great place to hang out and talk about the project, and even vote on future
-					features and changes. For example, the name "AeroChat" was voted on by the community
+					features and changes. For example, the name "Aerochat" was voted on by the community
 					(it used to be called <code>wlm-09-discord</code>, how boring is that?!). This
 					domain name (aerochat.live) was also voted on by the community.
 				</p>

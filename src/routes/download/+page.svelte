@@ -3,9 +3,9 @@
 	import screenshot3 from "$lib/assets/screenshot3.png";
 	import { onMount } from "svelte";
 	import CommandLink from "../../components/CommandLink.svelte";
-	// make a request to https://api.github.com/repos/not-nullptr/AeroChat/tags
+	// make a request to https://api.github.com/repos/not-nullptr/Aerochat/tags
 	// get [0].name
-	// fetch https://api.github.com/repos/not-nullptr/AeroChat/releases/tags/{name}
+	// fetch https://api.github.com/repos/not-nullptr/Aerochat/releases/tags/{name}
 	// get assets[0].browser_download_url
 	// window.open(url, "_self")
 	let url = "";
@@ -26,11 +26,11 @@
 </script>
 
 <svelte:head>
-	<title>Download AeroChat — AeroChat</title>
-	<meta name="title" content="Download AeroChat — AeroChat" />
+	<title>Download Aerochat — Aerochat</title>
+	<meta name="title" content="Download Aerochat — Aerochat" />
 	<meta
 		name="description"
-		content="Download any version of AeroChat here! Currently supports Windows 10 and Windows 11. AeroChat is an open source Discord client inspired by WLM 2009."
+		content="Download any version of Aerochat here! Currently supports Windows 10 and Windows 11. Aerochat is an open source Discord client inspired by WLM 2009."
 	/>
 </svelte:head>
 
@@ -40,29 +40,29 @@
 			<img
 				class="screenshot screenshot2"
 				src={screenshot2}
-				alt="A screenshot of AeroChat's main window."
+				alt="A screenshot of Aerochat's main window."
 			/>
 			<img
 				class="screenshot screenshot3"
 				src={screenshot3}
-				alt="A screenshot of AeroChat's server chat window."
+				alt="A screenshot of Aerochat's server chat window."
 			/>
 		</div>
 		<div class="info">
 			<div class="because">join the club</div>
 			<div class="why-container">
-				<p>Download AeroChat for Windows:</p>
+				<p>Download Aerochat for Windows:</p>
 				<!-- <a href={url}>Latest release</a>
-				<a href="https://github.com/not-nullptr/AeroChat/releases">All releases</a> -->
+				<a href="https://github.com/not-nullptr/Aerochat/releases">All releases</a> -->
 				<CommandLink
-					title="Download the latest version of AeroChat"
-					description="This will download the latest tag from AeroChat's GitHub repository directly."
+					title="Download the latest version of Aerochat"
+					description="This will download the latest tag from Aerochat's GitHub repository directly."
 					href={url}
 					target="_self"
 				/>
 				<CommandLink
 					title="View all releases"
-					description="This will open AeroChat's GitHub respository and view all public releases."
+					description="This will open Aerochat's GitHub respository and view all public releases."
 					href="https://github.com/not-nullptr/Aerochat/releases"
 					target="_blank"
 				/>
